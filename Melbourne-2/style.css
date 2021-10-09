@@ -74,6 +74,7 @@ div
 
 .mainHeading
 {
+    text-align: center;
     margin-top: 50px;   
 }
 p
@@ -83,21 +84,23 @@ p
 
 .orangeHR
 {
-    background: white;
+    background: orangered;
     height: 1.4%;
     border-radius: 2px;
 }
 
 .box
 {
-    border: 2px solid white;
+    border: 2px solid orangered;
     border-radius: 5px;
     padding: 5% 0%;
+    text-align: center;
 }
 
 .box hr 
 {
-    background: white;
+    margin: 0 auto;
+    background:white;
     width: 70%;
 }
 
