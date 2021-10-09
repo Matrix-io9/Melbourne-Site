@@ -12,3 +12,12 @@ Please follow these steps for initial setup of the project on your local machine
 
 3. You can directly run html files in your browser or download a VSCode extension named `Live Server` to run it for you.
 
+## Follow open-source contribution guideline to contribute to this repository:
+
+1. Get an issue assigned to you.
+2. Fork this repository.
+3. Clone from your forked version, i.e., the repo created under your account after fork.
+4. Create a new branch using a descriptive name reflecting the work to be done.
+5. Make changes to that branch.
+6. Push to GitHub.
+7. Create a pull request from that branch only.
