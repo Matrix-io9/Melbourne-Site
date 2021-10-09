@@ -58,3 +58,19 @@ p
     font-size: 25px;
 }
 
+.cols-inside
+{
+ width: 50%;
+ min-width: 300px;
+ padding: 0;
+ margin: auto;
+}
+
+.cols-inside input{
+    width: 200px;
+}
+
+.row
+{
+    height: auto;
+}
