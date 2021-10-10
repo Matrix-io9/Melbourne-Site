@@ -1,10 +1,4 @@
-body
-{
-    background:#30323c;
-    
-}
-
-div 
+h2 
 {
     color: white;
 }
@@ -64,14 +58,7 @@ p
     font-size: 25px;
 }
 
-#form1
-{
-    background-color: #F2AA4CFF;
-    border-radius: 25px;
-     border: 2px solid #000000;
-    padding: 20px; 
 
-}
 h4
 {
     color: #000000;

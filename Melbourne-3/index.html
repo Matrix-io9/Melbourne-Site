@@ -7,25 +7,28 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="index.js"></script>
     <title>City of Melbourne</title>
 </head>
-<body>
+<body align="center" style="background-color:white;">
     <div class="container">
+        <div class="jumbotron" style="background-color:#51087E; color:white;margin-top:30px;" >
         <div class="row">
             <div class="col-sm-1"></div>
-            <div class="col-sm-10" align="center">
-                <h1 class="mainHeading">Melbournians Participate</h1>
+            <div  style="background-color:#51087E; color:white;" >
+                <h1 class="display-4" align="center">Melbournians Participate</h1>
+                <p class="lead" align="center">Tell us what concerns yout the most in this election.</p>
+                <hr class="my-3"style="background-color:white">
+                <p>Select concerns from the list below by clicking and/or entering your own #tags. <br> (maximum 5 tags in total).</p>
                 <br>
-                <p>Tell us what concerns yout the most in this election.</p>
-                <p>Select concerns from the list below, by clicking and/ or entering your own #tags (maximum 5 in total).</p>
-                <br>
-                <p>Feel free to delete, re-select from list, enter your own #tag, and add comment, if any. Finally, click the RED SUBMIT button.</p>
-            </div>
-            <div class="col-sm-1"></div>
+                <p>Feel free to delete, re-select from list, enter your own #tag, and add comment, if any. <br>Finally, click the SUBMIT button.</p>
+              </div>
+              </div>
         </div>
+        <div class="jumbotron" style="background-color:#51087E; color:white;" >
         <div class="row" align="center" style="margin-top:30px;">
             <div class="col-sm-6" style="margin-top:30px;">
                 <h2>Tags</h2>
@@ -87,6 +90,9 @@
                 <option value="#MoreMinorityRights">
             </datalist>
         </div>
+        </div>
+
+        <div class="jumbotron" style="background-color:#51087E; color:white;margin-top:30px;" >
         <form id="form1">
 
             <div class="row" align="center">
@@ -120,6 +126,7 @@
                 </div>
             </div>
             </form>
+            </div>
     </div>
 
 <script>
