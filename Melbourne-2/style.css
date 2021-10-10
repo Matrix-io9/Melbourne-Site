@@ -33,9 +33,13 @@ div
     width: 60%;
     padding: 0% 2%;
     border-radius: 5px;
+    margin-left: 100px;
 }
 
-
+#commentsHead {
+    margin: auto 70px auto 100px;
+    text-align: center;
+}
 
 .button {
     background-color: blue;
@@ -124,16 +128,22 @@ p
     position: absolute;
 }
 
-#rankHead 
-{
-    position: absolute;
-    
+#ranksTagsHead {
+    display: flex;
+}
+
+#rankHead {
+    width: 20%;
+    margin-right: 5px;
+}
+#tagsHead {
+    width: 60%;
+    text-align: center;
 }
 
 .ranks
 {
-    position: absolute;
-    left: 4%;
+    margin: auto 30px auto 10px;
     height: 125%;
     width: 12%;
     border-radius: 5px;
