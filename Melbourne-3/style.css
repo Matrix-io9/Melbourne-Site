@@ -1,10 +1,8 @@
-body
-{
-    background:#30323c;
-    
+body{
+    align-content:"center";
+    background-color:white;
 }
-
-div 
+h2 
 {
     color: white;
 }
@@ -14,6 +12,23 @@ div
     padding:0;
 }
 
+.display-4, .lead{
+    text-align: center;
+}
+
+.my-3{
+    background-color: white;
+}
+.col-sm-6{
+    margin-top: 30px;
+}
+.card.tab1{
+    background-color:#51087E; 
+    color:white;
+    margin-top:50px;
+    padding-top: 30px;
+    height: 500px;
+}
 
 .tagName
 {
@@ -45,6 +60,7 @@ div
 form 
 {
     margin-top:50px;
+    text-align: center;
 }
 
 #fname 
@@ -64,18 +80,18 @@ p
     font-size: 25px;
 }
 
-#form1
-{
-    background-color: #F2AA4CFF;
-    border-radius: 25px;
-     border: 2px solid #000000;
-    padding: 20px; 
 
-}
 h4
 {
     color: #000000;
     font-family: 'Cairo', sans-serif;
     font-size: 250%;
 }
+
+.row{
+    text-align: center;
+
+}
+
+
 

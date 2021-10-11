@@ -1,145 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js"></script>
     <title>City of Melbourne</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
+      <div class="card tab1">
         <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-10" align="center">
-                <h1 class="mainHeading">Melbournians Participate</h1>
-                <br>
-                <p>Tell us what concerns yout the most in this election.</p>
-                <p>Select concerns from the list below, by clicking and/ or entering your own #tags (maximum 5 in total).</p>
-                <br>
-                <p>Feel free to delete, re-select from list, enter your own #tag, and add comment, if any. Finally, click the RED SUBMIT button.</p>
-            </div>
-            <div class="col-sm-1"></div>
+          <div class="col-sm-1"></div>
+          <div>
+            <h1 class="display-4">Melbournians Participate</h1>
+            <p class="lead">
+              Tell us what concerns yout the most in this election.
+            </p>
+            <hr class="my-3" />
+            <p>
+              Select concerns from the list below by clicking and/or entering
+              your own #tags. <br />
+              (maximum 5 tags in total).
+            </p>
+            <br />
+            <p>
+              Feel free to delete, re-select from list, enter your own #tag, and
+              add comment, if any. <br />Finally, click the SUBMIT button.
+            </p>
+          </div>
         </div>
-        <div class="row" align="center" style="margin-top:30px;">
-            <div class="col-sm-6" style="margin-top:30px;">
-                <h2>Tags</h2>
-            </div>
-            <div class="col-sm-6" style="margin-top:30px">
-                <h2>Comments</h2>
-            </div>
-            <div class="col-sm-6" style="margin-top:30px;">
-                <input list="tags" name="tag1" id="tag1" class="tagName" placeholder="Hashtag1">
-            </div>
-            <div class="col-sm-6" style="margin-top:30px">
-                <input type="text" class="comments" placeholder="Comments">
-            </div>
-            <div class="col-sm-6" style="margin-top:30px;">
-                <input list="tags" name="tag2" id="tag2" class="tagName" placeholder="Hashtag2">
-            </div>
-            <div class="col-sm-6" style="margin-top:30px;">
-                <input type="text" class="comments" placeholder="Comments">
-            </div>
-            <div class="col-sm-6" style="margin-top:30px;">
-                <input list="tags" name="tag3" id="tag3" class="tagName" placeholder="Hashtag3">
-            </div>
-            <div class="col-sm-6" style="margin-top:30px;">
-                <input type="text" class="comments" placeholder="Comments">
-            </div>
-            <div class="col-sm-6" style="margin-top:30px;">
-                <input list="tags" name="tag4" id="tag4" class="tagName" placeholder="Hashtag4">
-            </div>
-            <div class="col-sm-6" style="margin-top:30px;">
-                <input type="text" class="comments" placeholder="Comments">
-            </div>
-            <div class="col-sm-6" style="margin-top:30px;">
-                <input list="tags" name="tag5" id="tag5" class="tagName" placeholder="Hashtag5">
-            </div>
-            <div class="col-sm-6" style="margin-top:30px;">
-                <input type="text" class="comments" placeholder="Comments">
-            </div>
+      </div>
+      <div class="card tab1">
+        <div class="row tab2">
+          <div class="col-sm-6">
+            <h2>Tags</h2>
+          </div>
+          <div class="col-sm-6">
+            <h2>Comments</h2>
+          </div>
+          <div class="col-sm-6">
+            <input
+              list="tags"
+              name="tag1"
+              id="tag1"
+              class="tagName"
+              placeholder="Hashtag1"
+            />
+          </div>
+          <div class="col-sm-6">
+            <input type="text" class="comments" placeholder="Comments" />
+          </div>
+          <div class="col-sm-6">
+            <input
+              list="tags"
+              name="tag2"
+              id="tag2"
+              class="tagName"
+              placeholder="Hashtag2"
+            />
+          </div>
+          <div class="col-sm-6">
+            <input type="text" class="comments" placeholder="Comments" />
+          </div>
+          <div class="col-sm-6">
+            <input
+              list="tags"
+              name="tag3"
+              id="tag3"
+              class="tagName"
+              placeholder="Hashtag3"
+            />
+          </div>
+          <div class="col-sm-6">
+            <input type="text" class="comments" placeholder="Comments" />
+          </div>
+          <div class="col-sm-6">
+            <input
+              list="tags"
+              name="tag4"
+              id="tag4"
+              class="tagName"
+              placeholder="Hashtag4"
+            />
+          </div>
+          <div class="col-sm-6">
+            <input type="text" class="comments" placeholder="Comments" />
+          </div>
+          <div class="col-sm-6">
+            <input
+              list="tags"
+              name="tag5"
+              id="tag5"
+              class="tagName"
+              placeholder="Hashtag5"
+            />
+          </div>
+          <div class="col-sm-6">
+            <input type="text" class="comments" placeholder="Comments" />
+          </div>
 
-            <datalist id="tags" class="tagList" name="tagList">
-                <option value="#MaintainsUrbanBiosphere">
-                <option value="#CaptureAndRescueStormWater">
-                <option value="#DesignForAndByPeople">
-                <option value="#DigitalTransformationOfCouncilBureacrats">
-                <option value="#NewAreasOfEmployment">
-                <option value="#PropertyPrice">
-                <option value="#CovidOutbreakGuardRegulation">
-                <option value="#CitizenParticipationInDirectDemocracy">
-                <option value="#AffordableCommunityFacilitiesAndServices">
-                <option value="#SupportHomeless">
-                <option value="#CreativeValue">
-                <option value="#E-learningPolicies">
-                <option value="#CyclistFriendlyCity">
-                <option value="#AffordablePublicTransport">
-                <option value="#EnableCitizenEngagementWithNewTechnology">
-                <option value="#OpenupGovernmentData">
-                <option value="#CityCleanness">
-                <option value="#MoreHotspot">
-                <option value="#AcknowledgeAboriginalIdentity">
-                <option value="#MoreMinorityRights">
-            </datalist>
+          <datalist id="tags" class="tagList" name="tagList">
+            <option value="#MaintainsUrbanBiosphere"></option>
+            <option value="#CaptureAndRescueStormWater"></option>
+            <option value="#DesignForAndByPeople"></option>
+            <option value="#DigitalTransformationOfCouncilBureacrats"></option>
+            <option value="#NewAreasOfEmployment"></option>
+            <option value="#PropertyPrice"></option>
+            <option value="#CovidOutbreakGuardRegulation"></option>
+            <option value="#CitizenParticipationInDirectDemocracy"></option>
+            <option value="#AffordableCommunityFacilitiesAndServices"></option>
+            <option value="#SupportHomeless"></option>
+            <option value="#CreativeValue"></option>
+            <option value="#E-learningPolicies"></option>
+            <option value="#CyclistFriendlyCity"></option>
+            <option value="#AffordablePublicTransport"></option>
+            <option value="#EnableCitizenEngagementWithNewTechnology"></option>
+            <option value="#OpenupGovernmentData"></option>
+            <option value="#CityCleanness"></option>
+            <option value="#MoreHotspot"></option>
+            <option value="#AcknowledgeAboriginalIdentity"></option>
+            <option value="#MoreMinorityRights"></option>
+          </datalist>
         </div>
+      </div>
+
+      <div class="card tab1">
         <form id="form1">
-
-            <div class="row" align="center">
-                
-                <div class="col-sm-6">
-                     <center>
-                                <h4>
-                                  Name
-                              </h4>
-                              <br>
-                             <input type="text" id="fname" name="fname" placeholder="Name"><br>
-                     </center>
-                </div>
-                <div class="col-sm-6">
-                    <center>
-                        <h4>Email</h4>
-                        <br>
-                        <input type="text" id="email" name="email" placeholder="Email"><br>
-                    </center>
-                </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <center>
+                <h4>Name</h4>
+                <br />
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="Name"
+                /><br />
+              </center>
             </div>
-
-
-            <div class="row" align="center">
-                <div class="col-md-12">
-                    <br>
-                    <br>
-                    <p>Optionally, you can provide your name and a valid email id if you like my #tag leaders to involve you in developing the themes further.</p>
-                    <br>
-                    <button class="button" type="submit" form="form1" value="Submit">Submit</button>
-                </div>
+            <div class="col-sm-6">
+              <center>
+                <h4>Email</h4>
+                <br />
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                /><br />
+              </center>
             </div>
-            </form>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <br />
+              <br />
+              <p>
+                Optionally, you can provide your name and a valid email id if
+                you like my #tag leaders to involve you in developing the themes
+                further.
+              </p>
+              <br />
+              <button class="button" type="submit" form="form1" value="Submit">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
 
-<script>
-    $(".tagName").blur(function() {
+    <script>
+      $(".tagName").blur(function () {
         var hashTag = $(this).val();
-        var tagLength = $('.tagName').length;
+        var tagLength = $(".tagName").length;
         var id = this.id;
-        for (var i = 1 ; i<tagLength+1; i++)
-        {
-            if(id != ("tag"+i))
-            {
-                var link = $("#tag"+i).val();
-                if(hashTag == link && link!="") {
-                    alert("This #tag is already chosen.");
-                    $(this).val("");
-                }
+        for (var i = 1; i < tagLength + 1; i++) {
+          if (id != "tag" + i) {
+            var link = $("#tag" + i).val();
+            if (hashTag == link && link != "") {
+              alert("This #tag is already chosen.");
+              $(this).val("");
             }
-            
+          }
         }
-    });
-</script>
-</body>
+      });
+    </script>
+  </body>
 </html>
