@@ -1,3 +1,7 @@
+body{
+    align-content:"center";
+    background-color:white;
+}
 h2 
 {
     color: white;
@@ -8,6 +12,23 @@ h2
     padding:0;
 }
 
+.display-4, .lead{
+    text-align: center;
+}
+
+.my-3{
+    background-color: white;
+}
+.col-sm-6{
+    margin-top: 30px;
+}
+.card.tab1{
+    background-color:#51087E; 
+    color:white;
+    margin-top:50px;
+    padding-top: 30px;
+    height: 500px;
+}
 
 .tagName
 {
@@ -39,6 +60,7 @@ h2
 form 
 {
     margin-top:50px;
+    text-align: center;
 }
 
 #fname 
@@ -65,4 +87,11 @@ h4
     font-family: 'Cairo', sans-serif;
     font-size: 250%;
 }
+
+.row{
+    text-align: center;
+
+}
+
+
 
