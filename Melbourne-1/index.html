@@ -90,33 +90,34 @@
             </datalist>
         </div>
         <form id="form1">
-            <div class="row">
-                
-                <div class="col-sm-6">
-                                <h4>
-                                  Name
-                              </h4>
-                              <br>
-                             <input type="text" id="fname" name="fname" placeholder="Name"><br>
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-6 text-center">
+                        <div class="form-group">
+                            <label for="name"><h4>Name</h4></label><br>
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="col-6 text-center">
+                        <div class="form-group">
+                            <label for="emailAddress"><h4>Email</h4></label><br>
+                            <input type="email" class="form-control" id="emailAddress" placeholder="Email">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                        <h4>Email</h4>
+
+
+                <div class="row" align="center">
+                    <div class="col-md-12">
                         <br>
-                        <input type="text" id="email" name="email" placeholder="Email"><br>s
+                        <br>
+                        <h4>Optionally, you can provide your name and a valid email id if you like my #tag leaders to involve you in developing the themes further.</h4>
+                        <br>
+                        <button class="button" type="submit" form="form1" value="Submit">Submit</button>
+                    </div>
                 </div>
             </div>
-
-
-            <div class="row" align="center">
-                <div class="col-md-12">
-                    <br>
-                    <br>
-                    <h4>Optionally, you can provide your name and a valid email id if you like my #tag leaders to involve you in developing the themes further.</h4>
-                    <br>
-                    <button class="button" type="submit" form="form1" value="Submit">Submit</button>
-                </div>
-            </div>
-            </form>
+        </form>
     </div>
 
 <script>
