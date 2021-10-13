@@ -1,219 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="index.js"></script>
-    <title>City of Melbourne</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="card tab1">
-        <div class="row">
-          <div class="col-sm-1"></div>
-          <div>
-            <h1 class="display-4">Melbournians Participate</h1>
-            <p class="lead">
-              Tell us what concerns yout the most in this election.
-            </p>
-            <hr class="my-3" />
-            <p>
-              Select concerns from the list below by clicking and/or entering
-              your own #tags. <br />
-              (maximum 5 tags in total).
-            </p>
-            <br />
-            <p>
-              Feel free to delete, re-select from list, enter your own #tag, and
-              add comment, if any. <br />Finally, click the SUBMIT button.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="card tab1">
-        <div class="row tab2">
-          <div class="col-sm-6">
-            <h2>Tags</h2>
-          </div>
-          <div class="col-sm-6">
-            <h2>Comments</h2>
-          </div>
-          <div class="col-sm-6">
-            <input
-              list="tags"
-              name="tag1"
-              id="tag1"
-              class="tagName"
-              placeholder="Hashtag1"
-            />
-          </div>
-          <div class="col-sm-6">
-            <input type="text" class="comments" placeholder="Comments" />
-          </div>
-          <div class="col-sm-6">
-            <input
-              list="tags"
-              name="tag2"
-              id="tag2"
-              class="tagName"
-              placeholder="Hashtag2"
-            />
-          </div>
-          <div class="col-sm-6">
-            <input type="text" class="comments" placeholder="Comments" />
-          </div>
-          <div class="col-sm-6">
-            <input
-              list="tags"
-              name="tag3"
-              id="tag3"
-              class="tagName"
-              placeholder="Hashtag3"
-            />
-          </div>
-          <div class="col-sm-6">
-            <input type="text" class="comments" placeholder="Comments" />
-          </div>
-          <div class="col-sm-6">
-            <input
-              list="tags"
-              name="tag4"
-              id="tag4"
-              class="tagName"
-              placeholder="Hashtag4"
-            />
-          </div>
-          <div class="col-sm-6">
-            <input type="text" class="comments" placeholder="Comments" />
-          </div>
-          <div class="col-sm-6">
-            <input
-              list="tags"
-              name="tag5"
-              id="tag5"
-              class="tagName"
-              placeholder="Hashtag5"
-            />
-          </div>
-          <div class="col-sm-6">
-            <input type="text" class="comments" placeholder="Comments" />
-          </div>
-
-          <datalist id="tags" class="tagList" name="tagList">
-            <option value="#MaintainsUrbanBiosphere"></option>
-            <option value="#CaptureAndRescueStormWater"></option>
-            <option value="#DesignForAndByPeople"></option>
-            <option value="#DigitalTransformationOfCouncilBureacrats"></option>
-            <option value="#NewAreasOfEmployment"></option>
-            <option value="#PropertyPrice"></option>
-            <option value="#CovidOutbreakGuardRegulation"></option>
-            <option value="#CitizenParticipationInDirectDemocracy"></option>
-            <option value="#AffordableCommunityFacilitiesAndServices"></option>
-            <option value="#SupportHomeless"></option>
-            <option value="#CreativeValue"></option>
-            <option value="#E-learningPolicies"></option>
-            <option value="#CyclistFriendlyCity"></option>
-            <option value="#AffordablePublicTransport"></option>
-            <option value="#EnableCitizenEngagementWithNewTechnology"></option>
-            <option value="#OpenupGovernmentData"></option>
-            <option value="#CityCleanness"></option>
-            <option value="#MoreHotspot"></option>
-            <option value="#AcknowledgeAboriginalIdentity"></option>
-            <option value="#MoreMinorityRights"></option>
-          </datalist>
-        </div>
-      </div>
-
-      <div class="card tab1">
-        <form id="form1">
-          <div class="row">
-            <div class="col-sm-6">
-              <center>
-                <h4>Name</h4>
-                <br />
-                <input
-                  type="text"
-                  id="fname"
-                  name="fname"
-                  placeholder="Name"
-                /><br />
-              </center>
-            </div>
-            <div class="col-sm-6">
-              <center>
-                <h4>Email</h4>
-                <br />
-                <input
-                  type="text"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                /><br />
-              </center>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <br />
-              <br />
-              <p>
-                Optionally, you can provide your name and a valid email id if
-                you like my #tag leaders to involve you in developing the themes
-                further.
-              </p>
-              <br />
-              <button class="button" type="submit" form="form1" value="Submit">
-                Submit
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <script>
-      $(".tagName").blur(function () {
-        var hashTag = $(this).val();
-        var tagLength = $(".tagName").length;
-        var id = this.id;
-        for (var i = 1; i < tagLength + 1; i++) {
-          if (id != "tag" + i) {
-            var link = $("#tag" + i).val();
-            if (hashTag == link && link != "") {
-              alert("This #tag is already chosen.");
-              $(this).val("");
+    <head>
+        <title>City of Melbourne</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            body {
+                user-select: none;
             }
-          }
-        }
-      });
-    </script>
-  </body>
+        </style>
+    </head>
+    <body>
+        <div class="row p-5">
+            <div class="col p-5 bg-dark text-white container">
+                <div>
+                    <h1>Melbournians Participate</h1>
+                    <p>Tell us what concerns you the most in this election.</p>
+                    <p>Select concerns from the list below by clicking and / or entering your own #tags. (max 5)</p>
+                    <p>Feel free to delete, re-select from list, enter your own #tag, and add comment, if any. Finally, click the SUBMIT button.</p>
+                </div>
+                <form class="border border-light p-3" action="javascript:void()">
+                    <h6 class="mb-3">Optionally, you can provide your name and a valid email id if you like the leaders to involve you in developing the themes further.</h6>
+                    <div class="form-group mb-3 text-dark">
+                        <label for="name" class="form-label text-white">Name</label>
+                        <input class="form-control form-control-sm" id="name" name="name" placeholder="Your name" type="text">
+                    </div>
+                    <div class="form-group mb-3 text-dark">
+                        <label for="email" class="form-label text-white">Email</label>
+                        <input class="form-control form-control-sm" id="email" name="email" placeholder="Email" type="Your email">
+                    </div>
+                    <input type="submit" class="btn btn-sm btn-light">
+                </form>
+            </div>
+            <div class="col border border-dark container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Tags</th>
+                            <th>Comments</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input class="form-control" list="tags" id="tag1" name="tag1" class="tagName" placeholder="#Tag 1">
+                            </td>
+                            <td>
+                                <input class="form-control" placeholder="Comments">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="form-control" list="tags" id="tag2" name="tag2" class="tagName" placeholder="#Tag 2">
+                            </td>
+                            <td>
+                                <input class="form-control" placeholder="Comments">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="form-control" list="tags" id="tag3" name="tag3" class="tagName" placeholder="#Tag 3">
+                            </td>
+                            <td>
+                                <input class="form-control" placeholder="Comments">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="form-control" list="tags" id="tag4" name="tag4" class="tagName" placeholder="#Tag 4">
+                            </td>
+                            <td>
+                                <input class="form-control" placeholder="Comments">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="form-control" list="tags" id="tag5" name="tag5" class="tagName" placeholder="#Tag 5">
+                            </td>
+                            <td>
+                                <input class="form-control" placeholder="Comments">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <datalist id="tags" class="tagList" name="tagList">
+                    <option value="#MaintainsUrbanBiosphere"></option>
+                    <option value="#CaptureAndRescueStormWater"></option>
+                    <option value="#DesignForAndByPeople"></option>
+                    <option value="#DigitalTransformationOfCouncilBureacrats"></option>
+                    <option value="#NewAreasOfEmployment"></option>
+                    <option value="#PropertyPrice"></option>
+                    <option value="#CovidOutbreakGuardRegulation"></option>
+                    <option value="#CitizenParticipationInDirectDemocracy"></option>
+                    <option value="#AffordableCommunityFacilitiesAndServices"></option>
+                    <option value="#SupportHomeless"></option>
+                    <option value="#CreativeValue"></option>
+                    <option value="#E-learningPolicies"></option>
+                    <option value="#CyclistFriendlyCity"></option>
+                    <option value="#AffordablePublicTransport"></option>
+                    <option value="#EnableCitizenEngagementWithNewTechnology"></option>
+                    <option value="#OpenupGovernmentData"></option>
+                    <option value="#CityCleanness"></option>
+                    <option value="#MoreHotspot"></option>
+                    <option value="#AcknowledgeAboriginalIdentity"></option>
+                    <option value="#MoreMinorityRights"></option>
+                </datalist>
+                <div style="display: flex; justify-content: center; align-items: center;"><button class="btn btn-lg btn-dark">Submit</button></div>
+            </div>
+        </div>
+        <script>
+            $(".tagName").blur(function () {
+                var hashTag = $(this).val();
+                var tagLength = $(".tagName").length;
+                var id = this.id;
+                for (var i = 1; i < tagLength + 1; i++) {
+                    if (id != "tag" + i) {
+                        var link = $("#tag" + i).val();
+                        if (hashTag == link && link != "") {
+                        alert("This #tag is already chosen.");
+                        $(this).val("");
+                        }
+                    }
+                }
+            });
+        </script>
+    </body>
 </html>
